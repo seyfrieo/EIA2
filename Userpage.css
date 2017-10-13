@@ -1,0 +1,1067 @@
+/* div {
+	border: solid;
+	border-color: red;
+} */
+
+.zurueck{
+	width: 47px;
+	position: relative;
+	left: 2em;
+	top: 5.3em;
+	z-index: 4;
+}
+
+.impressum{
+	color: #ffff00;
+}
+
+.socialmediaposition{
+	position: relative;
+	left: 17px;
+}
+
+.intro{
+	margin: 1em;
+}
+
+.overlaycolumnlinks{
+  float: left;
+
+}
+
+.overlaycolumnrechts{
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.socialmedia {
+	margin: 3px;
+	position: relative;
+	text-align: center;
+}
+
+#zitat{
+	font-size: 1.5em;
+}
+
+.linksarbeiten{
+	font-size: 1em;
+	color: #ffffff;
+}
+
+header {
+  height:56px;
+  background-color: black;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+	box-shadow: 0px 0.1px 25px grey;
+/*  opacity: 0.9; */
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+footer {
+    background-color: black;
+    width: 101.25%;
+    height: 4.5em;
+    position: relative;
+    top: 9em;
+    clear: left;
+}
+
+.text:hover {
+  text-shadow: 0px 0 10px #fff;
+}
+
+.text {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.7s ease;
+	width: 560px;
+}
+
+
+/* Linkfarben */
+
+a:link {
+  text-decoration: none;
+}
+
+/* Parallax-Effekt */
+
+.parallax0,
+.parallax1,
+.parallax2,
+.parallax3,
+.parallax4,
+.parallax5 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax0 {
+  background-image: url("https://sftp.hs-furtwangen.de/~seyfrieo/EIA1/WebsiteMarkII/Images/wall22.jpg");
+  min-height: 100%;
+}
+
+.parallax1 {
+  background-image: url("https://sftp.hs-furtwangen.de/~seyfrieo/EIA1/WebsiteMarkII/Images/wall22.jpg");
+  min-height: 65%;
+}
+
+.parallax2 {
+  background-image: url("https://sftp.hs-furtwangen.de/~seyfrieo/EIA1/WebsiteMarkII/Images/permutation3.jpg");
+  min-height: 65%;
+}
+
+.parallax3 {
+  background-image: url("https://sftp.hs-furtwangen.de/~seyfrieo/EIA1/WebsiteMarkII/Images/kaeferbgbw2.jpg");
+  min-height: 65%;
+}
+
+.parallax4 {
+  background-image: url("https://sftp.hs-furtwangen.de/~seyfrieo/EIA1/WebsiteMarkII/Images/engagementbw.jpg");
+  min-height: 65%;
+}
+
+.parallax5 {
+  background-image: url("https://sftp.hs-furtwangen.de/~seyfrieo/EIA1/WebsiteMarkII/Images/kontakt3.jpg");
+  min-height: 65%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+	letter-spacing: 5px;
+}
+
+.titlecaption {
+	position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #adff2f;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  opacity: 0.9;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase; /* Überschriften werden großgeschrieben (Anmerkung an mich) */
+  font: 20px 'Open Sans', sans-serif;
+}
+
+/* Bunte Überschriften */
+
+.titlecolor0 {
+  color: #adff2f;
+}
+
+.titlecolor1 {
+  color: #fe9a2e;
+}
+
+.titlecolor2 {
+  color: #f31271;
+}
+
+.titlecolor3 {
+  color: #5cacee;
+}
+
+.titlecolor4 {
+  color: #d15fee;
+}
+
+.titlecolor5 {
+  color: #ffff00;
+}
+
+.navdef {
+  float: right;
+  display: block;
+  top: 0.1em;
+  right: 0.5%;
+  position: relative;
+}
+
+.space {
+  margin: 0.5em;
+}
+
+.engagement_pic {
+  width: 100%;
+  position: relative;
+  float: left;
+  left: -1em;
+}
+
+.passion_pic {
+  width: 60%;
+  position: relative;
+  float: right;
+}
+
+.projekte_pic {
+  width: 100%;
+  position: relative;
+  clear: both;
+  display: block;
+  left: -1em;
+}
+
+.projekte_pic2 {
+  width: 45%;
+  position: relative;
+  float: left;
+  top: 9em;
+  right: -33.5em;
+}
+
+.pfeil {
+  text-align: center;
+  position: relative;
+  width: 7em;
+	top: 4em;
+}
+
+/* Hovender Pfeil auf Titelbild */
+
+.hovering {
+  animation-name: hovering;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.textdef {
+  width: 100%;
+  top: 2em;
+  position: relative;
+  float: left;
+  height: auto;
+  margin: 1em;
+}
+
+/* Wisch-Galerie */
+
+.galleriepassion {
+  height: 350px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.scrollbar {
+  width: 100%;
+  height: 380px;
+  overflow: auto;
+  white-space: nowrap;
+  background: black;
+}
+
+/* Styles der verschiedenen Blöcke */
+
+.styleuebermich {
+  height: 40em;
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-align: justify;
+}
+
+.styleprojekte {
+  height: 240em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+.stylepassion {
+  height: 100em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+.styleengagement {
+  height: 90em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+/* Tabelle für Galerie */
+
+figure {
+  display: table-cell;
+  width: 400px;
+}
+
+@keyframes hovering {
+  from {
+    transform: translate(0, 0px);
+  }
+  40% {
+    transform: translate(0, -10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+#seitenanfang {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #cd007e;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#seitenanfang:hover {
+    background-color: darkgrey;
+}
+
+#headerhide {
+    display: none;
+    position: fixed;
+    z-index: 99;
+}
+
+.hide {
+  display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 4px;
+    text-decoration: none;
+    font-size: 250%;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.menuicondef {
+  width: 32px;
+  float: right;
+	margin-top: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+	.headerschriftzugdef {
+		margin: 7px;
+		height: 42px;
+	}
+
+.headerschriftdef {
+  float: left;
+  color: white;
+}
+
+.ad {
+  position: fixed;
+  bottom: 2em;
+  z-index: 99;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  left: 10%;
+}
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.rowdef {
+  position: relative;
+  top: 2em;
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 50em;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border: solid;
+    border-color: #f31271;
+    bottom: 0em;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+					.blackwhite {
+						-webkit-filter: grayscale(100%);
+						float: right;
+						top: 2em;
+						/* Safari 6.0 - 9.0 */
+					}
+					
+					.blackwhite:hover {
+						filter: none;
+						-webkit-filter: grayscale(0%);
+						transition: 2s;
+					}
+
+.overlaycolumnlinks{
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.overlaycolumnrechts{
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.divpfeil {
+	display: block;
+	position: relative;
+}
+
+#mySidenav a {
+    position: relative;
+    top: -10px;
+    transition: 0.3s;
+    padding: 4px;
+		padding-top: 0.6em;
+    width: 19.21%;
+    text-decoration: none;
+    color: white;
+    border-radius: 0px 0 20px 20px;
+    float: right;
+		text-align: center;
+}
+
+#mySidenav a:hover {
+    top: 0;
+}
+
+#kontakt {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #ffff00;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+   	text-align: center;
+}
+
+#engagement {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #d15fee;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+		width: 6em;
+}
+
+#passion {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #5cacee;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+}
+
+#projekte {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #f31271;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+}
+
+#uebermich {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #adff2f;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+}
+
+.trennerdef {
+	position: relative;
+	top: -14em;
+	width: 70%;
+}
+
+@media screen and (min-width: 570px) {
+  /* Smartphone */
+  
+  /* Styles der verschiedenen Blöcke */
+
+
+.blackwhite {
+						-webkit-filter: grayscale(100%);
+						float: left;
+						top: 2em;
+						/* Safari 6.0 - 9.0 */
+					}
+
+.styleuebermich {
+  height: 80em;
+}
+
+.styleprojekte {
+  height: 240em;
+}
+
+.stylepassion {
+  height: 100em;
+}
+
+.styleengagement {
+  height: 170em;
+}
+  
+.portrait {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  left: -1em;
+  }
+  
+  .passion_pic {
+      width: 60%;
+  position: relative;
+  text-align: center;
+      left: -1em;
+    float: right;
+  }
+  
+.textdef {
+  width: 100%;
+  top: 2em;
+  position: relative;
+  float: left;
+  margin: 1em;
+}
+}
+
+@media screen and (min-width: 768px) {
+  /* Tablet Portrait */
+	
+.overlaycolumnrechts{
+  width: 33.4%;
+}
+	
+	.overlaycolumnlinks{
+		width: 66.6%;
+	}
+  
+  /* Gleich wie Smartphone */
+}
+
+@media screen and (min-width: 64em) {
+  /* Tablet Landscape */
+  header {
+  height: 28px;
+  background-color: none;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+/*  box-shadow: 0px 0.1px 25px grey; */
+/*  opacity: 0.9; */
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+footer {
+    background-color: black;
+    width: 101.25%;
+    height: 4.5em;
+    position: relative;
+    top: 9em;
+    clear: left;
+}
+
+.text:hover {
+  text-shadow: 0px 0 10px #fff;
+}
+
+.text {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.7s ease;
+	width: 609px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #adff2f;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  opacity: 0.9;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px 'Open Sans', sans-serif;
+}
+
+.titlecolor0 {
+  color: #adff2f;
+}
+
+.titlecolor1 {
+  color: #fe9a2e;
+}
+
+.titlecolor3 {
+  color: #5cacee;
+}
+
+.titlecolor4 {
+  color: #d15fee;
+}
+
+.titlecolor5 {
+  color: #ffff00;
+}
+
+.navdef {
+  float: right;
+  display: block;
+  top: 0.1em;
+  right: 0.5%;
+  position: relative;
+}
+
+.portrait {
+  width: 60%;
+  position: relative;
+  float: right;
+    left: -1em;
+}
+
+.space {
+  margin: 0.5em;
+}
+
+.textdef {
+  width: 45%;
+  top: 2em;
+  position: relative;
+  margin: 1em;
+}
+
+.styleuebermich {
+  height: 40em;
+  color: white;
+  background-color: black;
+  text-align: center;
+  text-align: justify;
+}
+
+.styleprojekte {
+  height: 145em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+.stylepassion {
+  height: 100em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+.styleengagement {
+  height: 100em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+figure {
+  display: table-cell;
+  width: 400px;
+}
+
+  .hideicon {
+    display: none;
+  }
+	
+	.headerschriftzugdef {
+		margin: 10px;
+		height: 42px;
+	}
+}
+}
+
+@media screen and (min-width: 1024px) {
+  /* Desktop */
+
+
+	
+header {
+  height: 4%;
+  background-color: none;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+/*  box-shadow: 0px 0.1px 25px grey; */
+/*  opacity: 0.9; */
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+footer {
+    background-color: black;
+    width: 101.25%;
+    height: 4.5em;
+    position: relative;
+    top: 9em;
+    clear: left;
+	}
+
+.text:hover {
+  text-shadow: 0px 0 10px #fff;
+}
+
+.text {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.7s ease;
+	font-width: 15px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #adff2f;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  opacity: 0.9;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px 'Open Sans', sans-serif;
+}
+
+.titlecolor0 {
+  color: #adff2f;
+}
+
+.titlecolor1 {
+  color: #fe9a2e;
+}
+
+.titlecolor2 {
+  color: #f31271;
+}
+
+.titlecolor3 {
+  color: #5cacee;
+}
+
+.titlecolor4 {
+  color: #d15fee;
+}
+
+.titlecolor5 {
+  color: #ffff00;
+}
+
+.navdef {
+  float: right;
+  display: block;
+  top: 0.1em;
+  right: 0.5%;
+  position: relative;
+}
+
+.portrait {
+  width: 60%;
+  position: relative;
+  float: left;
+}
+
+.space {
+  margin: 0.5em;
+}
+
+.textdef {
+  width: 45%;
+  top: 2em;
+  position: relative;
+  margin: 1em;
+}
+
+.styleuebermich {
+  height: 40em;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.styleprojekte {
+  height: 130em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  padding: 80px;
+  text-align: justify;
+}
+
+.stylepassion {
+  height: 100em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+.styleengagement {
+  height: 90em;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  text-align: justify;
+}
+
+figure {
+  display: table-cell;
+  width: 400px;
+}
+
+  .hideicon {
+    display: none;
+  }
+	
+	.headerschriftzugdef {
+		margin: 10px;
+		height: 42px;
+	}
+	
+	#mySidenav a {
+    position: relative;
+    top: -10px;
+    transition: 0.3s;
+    padding: 4px;
+		padding-top: 0.6em;
+    width: 19.21%;
+    text-decoration: none;
+    color: white;
+    border-radius: 0px 0 20px 20px;
+    float: right;
+		text-align: center;
+}
+
+#mySidenav a:hover {
+    top: 0;
+}
+
+#kontakt {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #ffff00;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+   	text-align: center;
+}
+
+#engagement {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #d15fee;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+		width: 6em;
+}
+
+#passion {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #5cacee;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+}
+
+#projekte {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #f31271;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+}
+
+#uebermich {
+    top: 20px;
+    background-color: black;
+    border: solid;
+    border-color: #adff2f;
+    margin-left: 0.25em;
+		margin-right: 0.25em;
+    text-align: center;
+}
+}
