@@ -1,4 +1,4 @@
-function dialogFeld() {
+function Eingabefeld() {
   var eingabe = prompt("Gimme your name, please!", "");
   if (eingabe != null) {
     document.getElementById("Type").innerHTML =
