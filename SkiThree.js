@@ -7,13 +7,18 @@ var Aufgabe3;
     //Hiermit versichere ich, dass ich diesen
     //Code selbst geschrieben habe. Er wurde
     //nicht kopiert und auch nicht diktiert.
-    //Es schneit inzwischen, habe aber bisschen l�nger gebraucht bis ich's endlich
+    //Es schneit inzwischen, habe aber bisschen länger gebraucht bis ich's endlich
     //verstanden hab. Wolken/Skifahrer mache ich noch nach dem selben Prinzip.
-    //Grundfunktion sollte so aber korrekt sein.   
+    //Grundfunktion sollte so aber korrekt sein.
+    //Update 09.11.2017: I got it!
     window.addEventListener("load", letitsnow);
-    var crc2;
-    var schneeflockenX = [];
+    var crc2; //hier ins Array wird wie in eine Schublade meine
+    var schneeflockenX = []; //Koordinaten der Zeichnung gepackt
     var schneeflockenY = [];
+    var wolkenX = [];
+    var wolkenY = [];
+    var skifahrerX = [];
+    var skifahrerY = [];
     var image;
     function letitsnow() {
         var canvas = document.getElementsByTagName("canvas")[0];
@@ -107,30 +112,31 @@ var Aufgabe3;
         //crc2.fillStyle = "#90EE90";
         //crc2.fill();
         //Fluffige Wolke 1
-        crc2.beginPath();
-        crc2.arc(200, 100, 30, 0, 2 * Math.PI);
-        crc2.fillStyle = "#FFB6C1";
-        crc2.fill();
-        crc2.beginPath();
-        crc2.arc(240, 100, 30, 0, 2 * Math.PI);
-        crc2.fillStyle = "#FFB6C1";
-        crc2.fill();
-        //Fluffige Wolke 2
-        crc2.beginPath();
-        crc2.arc(590, 150, 40, 0, 2 * Math.PI);
-        crc2.fillStyle = "#FFB6C1";
-        crc2.fill();
-        crc2.beginPath();
-        crc2.arc(640, 150, 40, 0, 2 * Math.PI);
-        crc2.fillStyle = "#FFB6C1";
-        crc2.fill();
+        //    crc2.beginPath();
+        //    crc2.arc(200, 100, 30, 0, 2 * Math.PI);
+        //    crc2.fillStyle = "#FFB6C1";
+        //    crc2.fill();
+        //    crc2.beginPath();
+        //    crc2.arc(240, 100, 30, 0, 2 * Math.PI);
+        //    crc2.fillStyle = "#FFB6C1";
+        //    crc2.fill();
+        //    
+        //    //Fluffige Wolke 2
+        //    crc2.beginPath();
+        //    crc2.arc(590, 150, 40, 0, 2 * Math.PI);
+        //    crc2.fillStyle = "#FFB6C1";
+        //    crc2.fill();
+        //    crc2.beginPath();
+        //    crc2.arc(640, 150, 40, 0, 2 * Math.PI);
+        //    crc2.fillStyle = "#FFB6C1";
+        //    crc2.fill();
         //Let it snow
         //for (let i: number = 0; i < 1000; i++) {
         //    let x: number = 0 + Math.random() * 800;
         //    let y: number = 0 + Math.random() * 600;
         //    drawSnow(x, y, 2, 0, 2 * Math.PI, "#EFF5FB");
         // }
-        //Funktion f�r Schneeflocken
+        //Funktion für Schneeflocken
         //    function drawSnow(_x1: number, _y1: number, _radius: number, _start: number, _end: number, _color: string): void {
         //
         //    crc2.beginPath();
@@ -138,7 +144,7 @@ var Aufgabe3;
         //    crc2.fillStyle = _color;
         //    crc2.fill();
         //    }
-        //Funktion f�r B�ume
+        //Funktion für Bäume
         //    function drawTree(_x: number, _y: number, _color: string): void {
         //        
         //    crc2.fillStyle = "#90EE90";
@@ -155,25 +161,32 @@ var Aufgabe3;
         //    }
         //Stand alone tree
         drawTree(150, 550, "#90EE90");
-        //Zufallsb�ume
+        //Zufallsbäume
         for (var i = 0; i < 5; i++) {
-            //Eingrenzung f�r B�ume
+            //Eingrenzung für Bäume
             var x = 30 + Math.random() * 450;
             var y = 500 + Math.random() * 50;
             drawTree(x, y, "#90EE90");
         }
-        // Start f�r Schneeflocken
+        // Start für Schneeflocken
         for (var i = 0; i < 1000; i++) {
             schneeflockenX[i] = 0 + Math.random() * 800;
             schneeflockenY[i] = 0 + Math.random() * 600;
+        }
+        for (var i = 0; i < 3; i++) {
+            wolkenX[i] = 0 + Math.random() * 800;
+            wolkenY[i] = 0 + Math.random() * 200;
+        }
+        for (var i = 0; i < 1; i++) {
+            skifahrerX[i] = 0;
+            skifahrerY[i] = 400;
         }
         //Bild wird gespeichert
         image = crc2.getImageData(0, 0, 800, 600);
         animate();
     }
-    //Animationsbefehl: Hintergrund, l�schen, neuer Hintergrund, l�schen...
+    //Animationsbefehl: Hintergrund, löschen, neuer Hintergrund, löschen...
     function animate() {
-        console.log("Timeout");
         crc2.clearRect(0, 0, 800, 600);
         crc2.putImageData(image, 0, 0);
         for (var i = 0; i < schneeflockenX.length; i++) {
@@ -182,6 +195,22 @@ var Aufgabe3;
             }
             schneeflockenY[i] += Math.random();
             snowflake(schneeflockenX[i], schneeflockenY[i]);
+        }
+        for (var i = 0; i < wolkenX.length; i++) {
+            if (wolkenX[i] > 800) {
+                wolkenX[i] = 0;
+            }
+            wolkenX[i] += Math.random();
+            cloud(wolkenX[i], wolkenY[i]);
+        }
+        for (var i = 0; i < skifahrerX.length; i++) {
+            if (skifahrerX[i] > 800) {
+                skifahrerX[i] = 0; //Anfang
+                skifahrerY[i] = 400; //Anfang
+            }
+            skifahrerX[i] += 5; //Wie schnell in welche Richtung
+            skifahrerY[i] += 1.25;
+            skifahrerdraw(skifahrerX[i], skifahrerY[i]);
         }
         window.setTimeout(animate, 20);
     }
@@ -192,10 +221,43 @@ var Aufgabe3;
         crc2.fillStyle = "#EFF5FB";
         crc2.fill();
     }
+    //Funktion Wolken
+    for (var i = 0; i < wolkenX.length; i++) {
+        if (wolkenX[i] > 800) {
+            wolkenX[i] = 0;
+        }
+        console.log(wolkenX.length);
+        wolkenX[i] += Math.random();
+        cloud(wolkenX[i], wolkenY[i]);
+    }
+    //Funktion Wolken
+    function cloud(_x, _y) {
+        crc2.beginPath();
+        crc2.arc(_x, _y, 30, 0, 2 * Math.PI);
+        crc2.fillStyle = "#FFB6C1";
+        crc2.fill();
+        crc2.beginPath();
+        crc2.arc(_x + 40, _y, 30, 0, 2 * Math.PI);
+        crc2.fillStyle = "#FFB6C1";
+        crc2.fill();
+    }
+    //Funktion Skifahrer
+    function skifahrerdraw(_x, _y) {
+        crc2.beginPath();
+        crc2.fillStyle = "#000";
+        crc2.arc(_x, _y, 9, 0, 2 * Math.PI);
+        crc2.fill();
+        crc2.fillStyle = "#000";
+        crc2.fillRect(_x - 5, _y, 10, 30);
+        crc2.fillStyle = "#000";
+        crc2.fillRect(_x - 20, _y + 30, 40, 5);
+        crc2.fillStyle = "#000";
+        crc2.fillRect(_x - 20, _y + 23, 40, 5);
+    }
     function drawTree(_x, _y, _color) {
         crc2.fillStyle = "#90EE90";
         crc2.fillRect(_x, _y, 20, 30);
-        //Baumiger Baum Grundding
+        //Baumiger Baum Shape
         crc2.beginPath();
         crc2.moveTo(_x - 30, _y);
         crc2.lineTo(_x + 10, _y - 100);
@@ -205,4 +267,3 @@ var Aufgabe3;
         crc2.fill();
     }
 })(Aufgabe3 || (Aufgabe3 = {}));
-//# sourceMappingURL=SkiTwo.js.map
