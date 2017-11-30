@@ -1,4 +1,4 @@
-//Aufgabe: (Aufgabe 05)
+//Aufgabe: (Aufgabe 06)
 //Name: (Dominik Seyfried)
 //Matrikel: (256734)
 //Datum: (24.11.2017)
@@ -6,7 +6,7 @@
 //Code selbst geschrieben habe. Er wurde
 //nicht kopiert und auch nicht diktiert.
 
-namespace Aufgabe5 {
+namespace Aufgabe6 {
 
     export class Schnee extends MovingObjects {
 
